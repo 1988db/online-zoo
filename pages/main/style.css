@@ -1,16 +1,29 @@
 @font-face {
+    font-family: 'Roboto-Light';
+    src: url("../../assets/fonts/Roboto/Roboto-Light.ttf") 
+}
+
+@font-face {
     font-family: 'Roboto';
     src: url("../../assets/fonts/Roboto/Roboto-Regular.ttf") 
 }
 
 @font-face {
-    font-family: 'Roboto-Light';
-    src: url("../../assets/fonts/Roboto/Roboto-Light.ttf") 
+    font-family: 'Roboto-Medium';
+    src: url("../../assets/fonts/Roboto/Roboto-Medium.ttf") 
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url("../../assets/fonts/Roboto/Roboto-Bold.ttf") 
 }
 
 :root {
     --orange: rgb(249, 128, 75);
+    --orange-hover: rgb(228, 114, 9);
     --orange-gradient: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    --yellow: rgba(255, 238, 46, 1);
+    --green-active: rgb(75, 146, 0);
 }
 
 * {
@@ -51,8 +64,7 @@ header {
     color: white;
     align-items: center;
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 16px;    
     line-height: 140%;
     background-color: black;
 }
@@ -92,7 +104,8 @@ header {
 }
 
 .main-menu a, .designed-by a {
-    color: white;    
+    color: white;
+    font-family: 'Roboto', sans-serif;    
 }
 
 .main-menu a:hover, .designed-by a:hover {
@@ -113,4 +126,56 @@ header {
     position: absolute;
     top: 92px;
     left: calc(50% - 465px/2 + 239.5px);
+}
+
+.watch-your-favorite-animal-h2 {
+    width: 500px;
+    height: 400px;
+    display: inline-block;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    font-family: 'Roboto-Bold', sans-serif;
+    font-size: 106.5px;
+    font-weight: 700;
+    line-height: 75%;
+    position: absolute;
+    left: calc(50% - 500px/2 + 330.15px);
+    top: 166px;
+}
+
+.favorite {
+    color: var(--yellow);
+}
+
+.watch-online-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    border-radius: 25px;
+    position: absolute;
+    width: 298px;
+    height: 54px;
+    left: calc(50% - 298px/2 + 332px);
+    top: 626px;
+    background: var(--orange);
+    background: var(--orange-gradient);
+    cursor: pointer;
+}
+
+.watch-online-btn:hover {    
+    background: var(--orange-hover);    
+}
+
+.watch-online-btn:active {    
+    background: var(--green-active);
+}
+
+.watch-online-txt {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
 }
