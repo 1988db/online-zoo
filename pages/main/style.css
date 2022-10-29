@@ -53,6 +53,15 @@ header {
     padding-left: 58px;
 }
 
-.main-menu a {
+.main-menu a, .designed-by a {
     color: white;    
+}
+
+.main-menu a:hover, .designed-by a:hover {
+    color: orange;    
+}
+
+.main-menu a.about-link:focus {
+    color: orange;
+    outline-style: none;
 }
