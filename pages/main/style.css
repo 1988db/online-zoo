@@ -39,9 +39,26 @@ header {
     line-height: 140%;
 }
 
-.logo {
+.petstory-logo {
     width: 82px;
     height: 52px;
+    padding: 3.55px 4.75px;
+    border: 1px solid white;
+    border-radius: 2px;
+    position: relative;
+}
+
+.pet-story {
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 120%;
+    text-align: center;
+}
+
+.bamboo {
+    position: absolute;
+    top: 24.64px;
+    left: 13.23px;
 }
 
 .nav-container {
