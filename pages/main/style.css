@@ -1,7 +1,17 @@
 @font-face {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
     src: url("../../assets/fonts/Roboto/Roboto-Regular.ttf") 
-  }
+}
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url("../../assets/fonts/Roboto/Roboto-Light.ttf") 
+}
+
+:root {
+    --orange: rgb(249, 128, 75);
+    --orange-gradient: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+}
 
 * {
     margin: 0;
@@ -28,6 +38,13 @@ body {
     width: 1600px;
 }
 
+.giant-panda {
+    height: 780px;
+    background-image: url(../../assets/images/panda_bg.png);
+    background-size: contain;
+    position: relative;
+}
+
 header {
     display: flex;
     padding: 14px 220px;
@@ -37,6 +54,7 @@ header {
     font-size: 16px;
     font-weight: 500;
     line-height: 140%;
+    background-color: black;
 }
 
 .petstory-logo {
@@ -49,16 +67,19 @@ header {
 }
 
 .pet-story {
+    font-family: 'Roboto-Light', sans-serif; 
     font-size: 19px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 120%;
     text-align: center;
 }
 
 .bamboo {
     position: absolute;
-    top: 24.64px;
-    left: 13.23px;
+    width: 12px;
+    height: 21px;
+    top: 22.64px;
+    left: 10.23px;
 }
 
 .nav-container {
@@ -75,10 +96,21 @@ header {
 }
 
 .main-menu a:hover, .designed-by a:hover {
-    color: orange;    
+    color: var(--orange);    
 }
 
 .main-menu a.about-link:focus {
-    color: orange;
+    color: var(--orange);
     outline-style: none;
+}
+
+.orange-circle {
+    width: 465px;
+    height: 465px;
+    border-radius: 50%;
+    background-color: var(--orange);
+    background: var(--orange-gradient);
+    position: absolute;
+    top: 92px;
+    left: calc(50% - 465px/2 + 239.5px);
 }
