@@ -19,11 +19,19 @@
 }
 
 :root {
-    --orange: rgb(249, 128, 75);
-    --orange-hover: rgb(228, 114, 9);
+    --black-blue: #333B41;
+    --frosted-glass-white: #FDFDFF;
+    --gray: #767474;
+    --gray-smoky: #ABABAB
+    --green-active: #4b9200;
+    --light-gray: #F1F3F2;
+    --orange: #f9804b;
+    --orange-hover: #e47209;
     --orange-gradient: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
-    --yellow: rgba(255, 238, 46, 1);
-    --green-active: rgb(75, 146, 0);
+    --pink-gradient: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%),
+linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+    --rad: #D31414;
+    --yellow: #ffee2e;   
 }
 
 * {
@@ -41,17 +49,14 @@ li {
     list-style-type: none;
     display: inline-block;    
 }
-
-body {
-    background-color: black;
-}
  
-.main-wrapper {
-    margin: 0 auto;    
-    width: 1600px;
+.header {       
+    background-color: black;    
 }
 
 .giant-panda {
+    margin: 0 auto; 
+    width: 1600px;
     height: 780px;
     background-image: url(../../assets/images/panda_bg.png);
     background-size: contain;
@@ -178,4 +183,27 @@ header {
     color: white;
     font-weight: 500;
     text-transform: uppercase;
+}
+
+.cameras, .testimonials {
+    background-color: white;    
+}
+
+.cameras-wrapper {
+    width: 1600px;
+    height: 1289px;
+}
+
+.feed {
+    background: var(--orange-gradient);    
+}
+
+.feed-wrapper {
+    width: 1600px;
+    height: 1004px;
+}
+
+.testimonials-wrapper {
+    width: 1600px;
+    height: 919px;
 }
