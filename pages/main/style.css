@@ -19,11 +19,12 @@
 }
 
 :root {
+    --bg-black: #111115;
     --black-blue: #333B41;
     --frosted-glass-white: #FDFDFF;
     --gray: #767474;
-    --gray-smoky: #ABABAB
-    --green-active: #4b9200;
+    --gray-smoky: #ABABAB;
+    --green-active: #4B9200;
     --light-gray: #F1F3F2;
     --orange: #f9804b;
     --orange-hover: #e47209;
@@ -189,9 +190,54 @@ header {
     background-color: white;    
 }
 
+.cameras {
+    margin-top: 160px;
+}
+
 .cameras-wrapper {
     width: 1600px;
-    height: 1289px;
+    height: 1129px;    
+}
+
+.the-backstage {
+    width: 1161px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.backstage-txt-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 87px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.backstage-txt-wrapper h2 {
+    margin-bottom: 20px;
+    font-size: 48px;
+    line-height: 120%;
+    font-weight: 400;
+    color: var(--black-blue);
+}
+
+.backstage-txt-wrapper .subtitle {
+    margin: 54px 0 34px 0;
+    font-size: 24px;
+    line-height: 120%;
+    font-weight: 400;
+    color: var(--black-blue);
+}
+
+.backstage-txt-wrapper p {
+    font-size: 16px;
+    line-height: 130%;
+    font-weight: 400;
+    color: var(--black-blue);
+}
+
+.backstage-txt-wrapper p:nth-child(4) {
+    line-height: 140%;
 }
 
 .feed {
@@ -206,4 +252,13 @@ header {
 .testimonials-wrapper {
     width: 1600px;
     height: 919px;
+}
+
+footer {
+    background-color: var(--bg-black);
+}
+
+.footer-wrapper {
+    width: 1600px;
+    height: 443px;
 }
