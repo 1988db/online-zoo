@@ -682,6 +682,50 @@ a.emergency:active {
     margin: 0 auto;
     width: 1600px;
     height: 919px;
+    background-image: url(../../assets/images/leav-foto.png);
+    background-size: 250px 407px;
+    background-position: bottom -138px right;
+    background-repeat: no-repeat;
+}
+
+.testimonials-container {
+    width: 1160px;
+    margin: 140px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+h2.testimonials-h2 {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 130%;
+    color: var(--black-blue);
+    text-align: center;
+    margin-bottom: 47px;
+}
+
+.testimonial-box-wrapper {    
+    width: 272px;
+    height: 395px;
+    position: relative;
+    border-radius: 20px;
+    background: var(--pink-gradient);
+    
+}
+
+.testimonial-box-wrapper:before {
+    display: block;
+    content: '';
+    width: 268px;
+    height: 391px;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    background: var(--light-gray);
+    border-radius: 20px;
+    z-index: 0;
+    
 }
 
 footer {
