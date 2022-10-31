@@ -27,6 +27,7 @@
     --green-active: #4B9200;
     --light-gray: #F1F3F2;
     --orange: #f9804b;
+    --orange-btn: #fe9013;
     --orange-hover: #e47209;
     --orange-gradient: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
     --oragne-light-gradient: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
@@ -192,7 +193,13 @@ header {
 
 .cameras-wrapper {
     margin: 0 auto;
-    width: 1600px;      
+    padding-bottom: 100px;
+    width: 1600px;
+    background-image: url(../../assets/images/palm-foto.png), url(../../assets/images/streliztzia.png);
+    background-position: bottom -188px left -588px, right bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 880px 648px, 368px 275px;
+    padding-bottom: 100px;   
 }
 
 .the-backstage {
@@ -249,7 +256,7 @@ header {
 
 .thumbails {
     width: 1600px;
-    margin: 160px auto 0;
+    margin: 160px auto 0;    
 }
 
 .thumbails-wrapper {
@@ -301,8 +308,7 @@ header {
     border-radius: 5px;
 }
 
-.card-img {
-    width: 364px;
+.card-img {    
     height: 365px;
     border-radius: 5px 5px 0 0;    
     background-position: center;
@@ -549,4 +555,30 @@ footer {
     margin: 0 auto;
     width: 1600px;
     height: 443px;
+}
+
+.choose-btn-wrapper {
+    margin: 0 auto;
+}
+
+.choose-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px auto 0;
+    width: 298px;
+    height: 54px;
+    border-radius: 25px;
+    background-color: var(--orange-btn);
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    line-height: 0;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.choose-btn:active {    
+    background-color: var(--green-active);
 }
