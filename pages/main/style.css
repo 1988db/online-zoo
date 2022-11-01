@@ -807,9 +807,22 @@ div.name {
     text-align: center;
     width: 298px;
     height: 54px;
-    background: var(--orange-gradient);
-    margin-bottom: 31px;
+    background: var(--orange-gradient);    
     margin-bottom: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.feedback-btn:hover {
+    background: var(--orange-hover);
+}
+
+.feedback-btn:active {
+    background: var(--green-active);
 }
 
 footer {
@@ -842,7 +855,7 @@ footer {
     color: white;
     font-weight: 500;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 25px;
     cursor: pointer;
 }
 
@@ -852,8 +865,4 @@ footer {
 
 .choose-btn:active {
     background: var(--green-active);
-}
-
-.choose-btn:active {    
-    background-color: var(--green-active);
 }
