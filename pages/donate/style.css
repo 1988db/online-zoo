@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url("../../assets/fonts/Roboto/Roboto-Light.ttf") 
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url("../../assets/fonts/Roboto/Roboto-Regular.ttf") 
+}
+
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url("../../assets/fonts/Roboto/Roboto-Medium.ttf") 
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url("../../assets/fonts/Roboto/Roboto-Bold.ttf") 
+}
+
+:root {
+    --bg-black: #111115;
+    --black-blue: #333B41;
+    --frosted-glass-white: rgba(253, 253, 255, 0.52);
+    --gray: #767474;
+    --gray-smoky: #ABABAB;
+    --green-active: #4B9200;
+    --light-gray: #F1F3F2;
+    --orange: #f9804b;
+    --orange-btn: #fe9013;
+    --orange-hover: #e47209;
+    --orange-gradient: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    --oragne-light-gradient: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+    --pink-gradient: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%),
+linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+    --rad: #D31414;
+    --yellow: #ffee2e;   
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: black;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;    
+}
+ 
+.header {       
+    background-color: black;    
+}
+
+.header .wrapper-1600p {
+    width: 1600px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    padding: 14px 220px;
+    color: white;
+    align-items: center;    
+    font-size: 16px;    
+    line-height: 140%;
+    background-color: black;
+}
+
+.petstory-logo {
+    width: 82px;
+    height: 52px;
+    padding: 3.55px 4.75px;
+    border: 1px solid white;
+    border-radius: 2px;
+    position: relative;
+}
+
+.pet-story {     
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 120%;
+    text-align: center;
+}
+
+.bamboo {
+    position: absolute;
+    width: 12px;
+    height: 21px;
+    top: 22.64px;
+    left: 10.23px;
+}
+
+a.landing, .main-menu a, .designed-by a {
+    color: white;
+}
+
+nav {
+    margin-left: 5px;
+}
+
+.main-menu li {
+    padding-left: 58px;
+}
+
+.main-menu a:hover, .designed-by a:hover {
+    color: var(--orange);    
+}
+
+.main-menu a.about-link:focus {
+    color: var(--orange);
+    outline-style: none;
+}
