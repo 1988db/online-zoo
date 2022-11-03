@@ -60,14 +60,21 @@ li {
     background-color: black;    
 }
 
-.header .wrapper-1600p {
-    width: 1600px;
+.wrapper {
     margin: 0 auto;
+}
+
+.w1600p {
+    width: 1600px;
+}
+
+.w1160p {
+    width: 1160px;
 }
 
 header {
     display: flex;
-    padding: 14px 220px;
+    padding: 14px 0 14px 220px;
     color: white;
     align-items: center;    
     font-size: 16px;    
@@ -118,4 +125,46 @@ nav {
 .main-menu a.about-link:focus {
     color: var(--orange);
     outline-style: none;
+}
+
+.panda.w1600p {
+    height: 466px;
+    background-image: url(../../assets/images/panda-donate-bg.png);
+    background-size: auto 390px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+main {
+    background: var(--oragne-light-gradient);
+}
+
+.donate.w1600p {
+    padding: 40px 0 180px;    
+}
+
+.need-help {
+    font-size: 36px;
+    color: white;
+    line-height: 130%;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+p.need-help {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 140%;
+    margin-bottom: 40px;
+}
+
+.donation {
+    color: var(--orange-btn);
+}
+
+.pick-and-feed {
+    margin: 60px 0 0;
+    padding: 51px 92px;
+    border-radius: 20px;
+    background: rgba(253, 253, 255, 0.52);
 }
