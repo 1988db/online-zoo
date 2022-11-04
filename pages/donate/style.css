@@ -122,7 +122,7 @@ nav {
     color: var(--orange);    
 }
 
-.main-menu a.about-link:focus {
+.main-menu a.donate-link:focus {
     color: var(--orange);
     outline-style: none;
 }
@@ -162,11 +162,63 @@ p.need-help {
     color: var(--orange-btn);
 }
 
-.pick-and-feed {
+div.pick-and-feed {
     margin: 60px 0 0;
     padding: 51px 92px;
     border-radius: 20px;
     background: rgba(253, 253, 255, 0.52);
+}
+
+h2.pick-and-feed {
+    font-size: 48px;
+    text-align: center;
+    color: var(--orange-btn);
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+p.we-know {
+    font-size: 24px;
+    color: var(--black-blue);
+    margin-bottom: 60px;
+}
+
+.meals-number {
+    position: relative;
+}
+
+.meals-number:after {
+    display: block;
+    content: '';
+    width: 14px;
+    height: 14px;
+    background-image: url(../../assets/icons/cross.png);
+    background-size: 14px 14px;
+    position: absolute;
+    right: -25px;
+    top: calc((100% - 11px)/2 + 7px);
+}
+
+.diet {
+    display: flex;
+    justify-content: center;
+    column-gap: 90px;
+    align-items: center;
+}
+
+.meals-number {
+    margin-bottom: 11px;
+    font-size: 72px;
+    font-weight: 600;
+    line-height: 80%;
+    text-align: center;
+}
+
+.meals-desription {
+    font-weight: 400;
+    line-height: 140%;
+    color: var(--black-blue);
+    text-align: center;
 }
 
 /* FOOTER */
