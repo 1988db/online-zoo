@@ -25,6 +25,7 @@
     --gray: #767474;
     --gray-smoky: #ABABAB;
     --green-active: #4B9200;
+    --input-gray: #929699;
     --range-gray:#404950;
     --range-line-gray: #72828E;
     --light-gray: #F1F3F2;
@@ -341,6 +342,106 @@ p.we-know {
 .d7 {
     left: calc(100% - 20px);
 }
+
+.donation-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.another-amount {
+    width: 268px;
+    height: 54px;
+    background-color: var(--orange);
+    background-color: transparent;
+    border: 1px solid var(--input-gray);
+    padding-left: 9px;
+}
+
+.another-amount::placeholder {
+    padding: 16px 0;
+    color: var(--input-gray);
+}
+
+.amount-input-wrapper {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.frequence-wrapper {
+    display: flex;
+    column-gap: 50px;
+}
+
+.once-wrapper, .monthly-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.amount-input-wrapper:after {
+    content: '';
+    width: 10px;
+    height: 20px;
+    display: block;
+    background: url(../../assets/icons/dollar.png);
+    background-size: contain;
+    position: absolute;
+    top: 16px;
+    right: 9px;
+}
+
+label {
+    font-size: 16px;
+}
+
+[type=radio] {
+    border: 1px solid var(--orange-btn);
+    background-color: var(--orange);
+    background-color: transparent;
+    width: 16px;
+    height: 16px;
+    margin: 0 10px 0 0;
+}
+
+.submit {
+    width: 298px;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 25px;
+    background: var(--orange-gradient);
+    margin-top: 31px;
+    margin-bottom: 30px;
+    border: 0;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background: var(--orange-btn);
+}
+
+.submit:active {
+    background-color: var(--green-active);
+    color: var(--green-active);
+}
+
+
+
 
 /* FOOTER */
 
