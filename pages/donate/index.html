@@ -66,8 +66,8 @@
                         <span>$50</span>
                         <span>$25</span>
                     </div>
-                    <form class="donation-form">
-                        <label class="amount-input-wrapper"><input name="another-amount" id="another-amount" class="another-amount" type="number" placeholder="Another amount" max="9999"></label>
+                    <form class="donation-form">                        
+                        <label class="amount-input-wrapper"><input name="another-amount" id="another-amount" class="another-amount" type="number" max="9999" placeholder="Another amount"></label>
                         <div class="frequence-wrapper">
                             <label for="monthly">
                                 <input type="radio" name="frequence" id="monthly" value="monthly">
@@ -80,7 +80,7 @@
                                 Once                                
                             </label>                            
                         </div>
-                        <button type="button" class="submit">FEED A FRIEND NOW</button>
+                        <button id="submit" type="submit" class="submit">FEED A FRIEND NOW</button>
                         <p>Share with your friends on social networks</p>
                     </form>
                 </div>
@@ -97,7 +97,7 @@
                             <img class="bamboo" src="../../assets/images/bamboo.png" width="7px" height="21px" alt="">
                         </div>
                     </a>
-                    <form>
+                    <form id="email-form">
                         <label class="email" for="email">Subscribe to our news</label>
                         <input class="email" id="email"name="email" type="email" placeholder="Enter your emial" required>
                         <button class="email" type="submit">Submit</button>

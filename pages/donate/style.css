@@ -363,13 +363,18 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+.amount-input-wrapper {
+    align-self: flex-start;
+}
+
 .another-amount {
     width: 268px;
     height: 54px;
+    color: var(--input-gray);
     background-color: var(--orange);
     background-color: transparent;
     border: 1px solid var(--input-gray);
-    padding-left: 9px;
+    padding-left: 9px;    
 }
 
 .another-amount::placeholder {
@@ -507,6 +512,8 @@ input.email {
     height: 42px;
     border: 1px solid var(--orange);
     background-color: var(--bg-black);
+    color: #BDBDBD;
+    padding-left: 10px;
 }
 
 input:focus {
@@ -526,7 +533,7 @@ input.email:active::placeholder {
     font-size: 16px;
     line-height: 140%;
     color: #BDBDBD;
-    padding: 10px;
+    padding: 10px 10px 10px 0;
 }
 
 button.email {
@@ -535,8 +542,8 @@ button.email {
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
-    color: black;
-    border: 1px solid black;   
+    color: var(--rad);
+    border: 1px solid var(--rad);   
     border-radius: 5px;
     margin-left: 10px;
     cursor: pointer;
@@ -545,6 +552,11 @@ button.email {
 button.email:active {
     color: var(--green-active);
     border: 1px solid var(--green-active);
+}
+
+#email-form:valid button {
+    border: 1px solid var(--black-blue);
+    color: black;
 }
 
 .row-2 {
