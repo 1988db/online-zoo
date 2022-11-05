@@ -377,6 +377,15 @@ input[type=number] {
     color: var(--input-gray);
 }
 
+.another-amount:active {
+    color: var(--green-active);
+    border: 1px solid var(--green-active);
+}
+
+.another-amount:active::placeholder {    
+    color: var(--green-active);
+}
+
 .amount-input-wrapper {
     position: relative;
     margin-bottom: 25px;
@@ -397,6 +406,12 @@ input[type=number] {
     position: absolute;
     top: 16px;
     right: 9px;
+    cursor: text;
+}
+
+.amount-input-wrapper:active:after {
+    background: url(../../assets/icons/dollar-active.png);
+    background-size: contain;    
 }
 
 label {
