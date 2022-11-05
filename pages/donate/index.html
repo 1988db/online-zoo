@@ -69,14 +69,16 @@
                     <form class="donation-form">
                         <div class="amount-input-wrapper"><input name="another-amount" id="another-amount" class="another-amount" type="number" placeholder="Another amount" max="9999"></div>
                         <div class="frequence-wrapper">
-                            <div class="monthly-wrapper">
+                            <label for="monthly">
                                 <input type="radio" name="frequence" id="monthly" value="monthly">
-                                <label for="monthly">Monthly</label>
-                            </div>
-                            <div class="once-wrapper">
+                                <span class="checkmark"></span>
+                                Monthly                                
+                            </label>
+                            <label for="once">
                                 <input type="radio" name="frequence" id="once" value="once" checked>
-                                <label for="monthly">Once</label>
-                            </div>
+                                <span class="checkmark"></span>
+                                Once                                
+                            </label>                            
                         </div>
                         <button type="button" class="submit">FEED A FRIEND NOW</button>
                         <p>Share with your friends on social networks</p>

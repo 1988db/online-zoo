@@ -386,11 +386,6 @@ input[type=number] {
     column-gap: 50px;
 }
 
-.once-wrapper, .monthly-wrapper {
-    display: flex;
-    align-items: center;
-}
-
 .amount-input-wrapper:after {
     content: '';
     width: 10px;
@@ -405,16 +400,39 @@ input[type=number] {
 
 label {
     font-size: 16px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
 }
 
 [type=radio] {
-    border: 1px solid var(--orange-btn);
-    background-color: var(--orange);
-    background-color: transparent;
-    width: 16px;
-    height: 16px;
-    margin: 0 10px 0 0;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
 }
+
+.checkmark {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -26px;
+    height: 16px;
+    width: 16px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid var(--orange-btn);
+  }
+
+  label:hover .checkmark {
+    background-color: var(--frosted-glass-white);
+  }
+
+ input:checked ~ .checkmark {
+    background-color: #111115;
+  }
 
 .submit {
     width: 298px;
@@ -439,9 +457,6 @@ label {
     background-color: var(--green-active);
     color: var(--green-active);
 }
-
-
-
 
 /* FOOTER */
 
