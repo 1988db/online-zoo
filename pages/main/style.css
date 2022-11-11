@@ -1374,6 +1374,62 @@ a:visited p {
     .feed-btn {        
         margin: 30px auto 0;
     }
+
+    .testimonials-wrapper {        
+        width: 100%;    
+        background-image: url(../../assets/images/leav-foto.png);
+        background-size: 66px 109px;
+        background-position: bottom -37px right;
+        background-repeat: no-repeat;
+    }
+
+    .testimonials-container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 30px 3% 60px;        
+    }
+
+    .feedback-btn {            
+        margin: 30px auto 0;
+        width: 240px;
+        height: 54px;
+    }
+
+    h2.testimonials-h2 {        
+        font-size: 24px;        
+        margin-bottom: 20px;
+    }
+
+    .testimoinals-boxes-container {
+        width: 100%;
+        flex-wrap: wrap;
+        row-gap: 15px;
+        justify-content: center;
+    }
+    .testimonials-border {
+        aspect-ratio: 2.7 / 1;
+        width: 100%;
+        height: 100%;        
+    }
+
+    .testimonial-box-wrapper {
+        aspect-ratio: 2.7 / 1;       
+        width: calc(100% - 4px);
+        height: calc(100% - 4px);       
+        overflow: hidden;
+    }
+
+    .desc-wrap {
+        line-height: 130%;
+    }
+
+    .testimonials-border:last-child {
+        display: none;
+    }
+
+    .progress-bar {
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 640px) and (max-width: 999px) {
