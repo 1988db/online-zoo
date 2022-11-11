@@ -545,6 +545,40 @@ a.landing {
     background-color: rgba(0,0,0,0.5);
 }
 
+.alligator {
+    display: none;
+}
+
+.alligators {
+    background-image: url(../../assets/images/alligator.png);
+    background-size: 366px 366px;
+}
+
+.alligators:after {
+    display: block;
+    content: '';
+    width: 364px;    
+    height: 0; 
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 365px;
+    transition: top 0.5s, height 0.5s;
+}
+
+.alligators:hover:after {
+    display: flex;       
+    justify-content: center;
+    align-items: center;
+    color: #EAF7FE;
+    font-size: 32px;
+    font-family: 'Roboto', sans-serif;
+    content: 'Dundee, Sydney';
+    width: 364px;
+    height: 365px;
+    top: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+
 .arrow-right-container {
     width: 62px;
     display: flex;
@@ -560,6 +594,7 @@ a.landing {
     justify-content: center;
     align-items: center;
     margin: 60px auto 59px;
+    margin-bottom: 0;
     width: 298px;
     height: 54px;
     border-radius: 25px;
@@ -967,6 +1002,11 @@ button.email:active {
     margin-top: 36px;    
 }
 
+.row-2 a {
+    display: inline-block;
+    width: 298px;
+}
+
 .donate-btn {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -1156,16 +1196,25 @@ a:visited p {
     }
 
     .cameras {
-        padding: 0 10px;
+        padding: 0;
         margin-top: 74px;
     }
 
-    .cameras-wrapper {        
+    .cameras-wrapper {            
         width: 100%;
+        background-image: url(../../assets/images/palm-foto.png), url(../../assets/images/streliztzia.png);
+        background-position: bottom -29px left -80px, right bottom;
+        background-repeat: no-repeat, no-repeat;
+        background-size: 138px 101px, 85px 71px;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-bottom: 60px;   
     }
+
     .the-backstage {
         width: 100%;
-        padding-top: 20px;      
+        padding-top: 0;
+        padding-bottom: 40px;     
     }
 
     .the-backstage-wrapper {
@@ -1184,6 +1233,146 @@ a:visited p {
         margin-top: 30px;
         margin-bottom: 10px;
         font-size: 24px;             
+    }
+
+    .backstage-txt-wrapper .subtitle {
+        margin: 20px 0 10px 0;        
+    }
+
+    .thumbails {        
+        margin: 0 auto;
+        width: 100%;   
+    }
+
+    .arrow-left-container, .arrow-right-container {
+        display: none;
+    }
+
+    .thumbails-wrapper, .thumbails-container {
+        width: 100%;
+        max-width: 603px;
+        flex-wrap: wrap;
+        margin-right: 0;
+    }
+
+    .card {
+        width: 100%;
+        height: auto;
+        max-width: 601px;
+    }
+
+    .giant-pandas, .eagles, .gorillas, .two-toed-sloth, .cheetahs, .penguins, .alligators {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .card-img {
+        width: 100%;        
+        max-width: 602px;          
+    }
+
+    .penguin, .cheetah, .sloth {
+        display: none;
+    }
+    
+    .alligator {
+        display: block;
+    }
+
+    .feed-wrapper {       
+        padding: 20px 10px;
+        width: 100%;        
+    }
+
+    .feed-container {
+        width: 100%;
+        padding: 20px 0 40px;            
+    }
+
+    .pick-and-feed {        
+        font-size: 24px;        
+        margin: 0 auto 10px;
+        text-align: center;
+    }
+
+    .we-know {        
+        margin: 0 3px 20px;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .covid, .even {
+        display: none;
+    }
+
+    .how-it-works {
+        font-size: 24px;
+        margin: 0 auto 20px;
+    }
+
+    .payment-options-wrapper {
+        display: flex;
+        flex-direction: column;       
+        width: 100%;
+        padding: 0 66px;
+        height: auto;
+        margin: 0 auto;
+        row-gap: 20px;  
+    }
+
+    .payment-method-container {        
+        width: 100%;
+        min-height: 222px;        
+    }
+
+    .payment-method-container:first-child:after, .payment-method-container:nth-child(2):after {        
+        display: none;
+    }
+
+    .payment-img-wrapper {
+        position: relative;
+        aspect-ratio: 1 / 1;
+        width: 100%;
+        height: auto;       
+    }
+
+     .payment-method-container .payment-img-wrapper::after {
+        content: '';
+        display: block;
+        width: 25.4px;
+        height: 92px;
+        background: url(../../assets/icons/green-arrow.png) no-repeat center;
+        background-size: contain;
+        position: absolute;
+        right: -30px;
+        bottom: -85px;
+    }
+
+    .payment-method-container:last-child .payment-img-wrapper::after {
+        display: none;
+    }
+
+    .credit-card {
+        width: 64%;
+        height: auto;
+    }
+
+    .tree {
+        width: 51%;
+        height: auto;
+    }
+
+    .monkey {
+        width: 74%;
+        height: auto;
+    }
+
+    .payment-dsc {        
+        margin-top: 10px;              
+    }
+
+    .feed-btn {        
+        margin: 30px auto 0;
     }
 }
 
