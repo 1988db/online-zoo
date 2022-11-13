@@ -1772,25 +1772,25 @@ a:visited p {
     .testimonials-wrapper {        
         width: 100%;    
         background-image: url(../../assets/images/leav-foto.png);
-        background-size: 66px 109px;
-        background-position: bottom -37px right;
+        background-size: 128px 212px;
+        background-position: bottom -72px right -10px;
         background-repeat: no-repeat;
     }
 
     .testimonials-container {
         width: 100%;
         margin: 0 auto;
-        padding: 30px 3% 60px;        
+        padding: 60px 3.125% 80px;        
     }
 
     .feedback-btn {            
-        margin: 30px auto 0;
+        margin: 40px auto 0;
         width: 240px;
         height: 54px;
     }
 
     h2.testimonials-h2 {        
-        font-size: 24px;        
+        font-size: 36px;        
         margin-bottom: 20px;
     }
 
@@ -1842,11 +1842,7 @@ a:visited p {
     
     .ico {
         margin: 0;
-    }
-    
-    .pet-story {
-        font-size: 19px;
-    }
+    }    
 
     .bamboo {
         position: absolute;
@@ -1898,7 +1894,7 @@ a:visited p {
     .designed-by-mobile {
         font-family: 'Roboto-Light', sans-serif;
         font-weight: 100;
-        font-size: 15px;
+        font-size: 16px;
         line-height: 120%;
         color: var(--gray-smoky);
     }
