@@ -1674,44 +1674,49 @@ a:visited p {
     }
 
     .feed-wrapper {       
-        padding: 20px 10px;
+        padding: 20px 0;
         width: 100%;        
     }
 
     .feed-container {
         width: 100%;
-        padding: 20px 0 40px;            
+        padding: 10px 20px 60px;            
     }
 
     .pick-and-feed {        
-        font-size: 24px;        
-        margin: 0 auto 10px;
+        font-size: 42px;        
+        margin: 0 auto 20px;
         text-align: center;
     }
 
     .we-know {        
-        margin: 0 3px 20px;
-        text-align: center;
-        font-size: 18px;
+        margin: 0 0 20px;        
+        font-size: 22px;
     }
 
     .covid, .even {
-        display: none;
+        font-family: 'Roboto-Medium', sans-serif;
+        margin: 0 0 10px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .even {        
+       font-family: 'Roboto', sans-serif;        
     }
 
     .how-it-works {
-        font-size: 24px;
-        margin: 0 auto 20px;
+        font-size: 36px;
+        margin: 30px auto 20px;
     }
 
     .payment-options-wrapper {
-        display: flex;
-        flex-direction: column;       
+        display: flex;              
         width: 100%;
-        padding: 0 66px;
+        padding: 0;
         height: auto;
         margin: 0 auto;
-        row-gap: 20px;  
+        column-gap: 42px;  
     }
 
     .payment-method-container {        
@@ -1725,9 +1730,7 @@ a:visited p {
 
     .payment-img-wrapper {
         position: relative;
-        aspect-ratio: 1 / 1;
-        width: 100%;
-        height: auto;       
+               
     }
 
     .payment-method-container .payment-img-wrapper::after {
@@ -1739,7 +1742,9 @@ a:visited p {
         background-size: contain;
         position: absolute;
         right: -30px;
-        bottom: -85px;
+        top: -48px;
+        transform: rotate(-80deg);
+        z-index: 2;
     }
 
     .payment-method-container:last-child .payment-img-wrapper::after {
@@ -1760,13 +1765,9 @@ a:visited p {
         width: 74%;
         height: auto;
     }
-
-    .payment-dsc {        
-        margin-top: 10px;              
-    }
-
+       
     .feed-btn {        
-        margin: 30px auto 0;
+        margin: 40px auto 0;
     }
 
     .testimonials-wrapper {        
