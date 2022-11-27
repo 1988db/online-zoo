@@ -132,7 +132,7 @@ a.landing {
 .burger-btn {
     width: 18px;
     height: 10px;
-    display: flex;
+    display: none;
     flex-direction: column;
     column-gap: 2px;
     justify-content: space-between;
@@ -1182,6 +1182,10 @@ a:visited p {
         display: none;
     }
 
+    .burger-btn {
+        display: flex;
+    }
+
     .orange-circle {
         width: 119px;
         height: 119px;
@@ -1561,6 +1565,10 @@ a:visited p {
         top: 12px;
         left: 4px;
     }
+
+    .burger-btn {
+        display: flex;
+    }
     
     .main-menu {
         display: none;
@@ -1586,7 +1594,7 @@ a:visited p {
         height: 205px;
         text-align: center;       
         font-size: 54px;        
-        left: 5%;
+        left: 58%;
         top: 40px;
     }
     .watch-online-btn {        
@@ -1946,11 +1954,7 @@ a:visited p {
 
     .main-menu li {
         padding-left: 48px;
-    }
-
-    .burger-btn {
-        display: none;
-    }
+    }   
     
     .giant-panda {
         margin: 0 auto;
@@ -1984,5 +1988,99 @@ a:visited p {
     .watch-online-btn {        
         left: 56%;
         top: 403px;        
+    }
+
+    .cameras-wrapper {        
+        width: 100%;
+        max-width: 1599px;        
+        padding-bottom: 156px;
+        background-size: 376px 328px, 241px 180px;
+        background-position: bottom -100px left -190px, right bottom;
+    }
+
+    .the-backstage {
+        width: 100%;        
+        padding: 100px 30px 142px;        
+    }
+
+    .the-backstage-wrapper {
+        width: 100%;        
+    }
+
+    .chinsese {
+        aspect-ratio: 1.1 / 1;
+        width: 455px;         
+            }
+
+    .backstage-txt-wrapper {        
+        padding-left: 31px;        
+    }
+
+    .thumbails {
+        width: 100%;
+        max-width: 1599px;
+        margin: 0 auto;
+    }
+
+    .thumbails-wrapper {
+        width: 100%;
+        max-width: 1599px;       
+    }
+
+    .arrow-left-container, .arrow-right-container {
+        display: none;
+    }
+
+    .arrow-left-container-mobile, .arrow-right-container-mobile {
+        display: flex;
+        width: calc(50% - 40px);
+        height: 62px;
+    }
+
+    .arrow-left-container-mobile {
+        justify-content: flex-end;
+        padding-right: calc(15% - 82px);
+    }
+
+    .arrow-right-container-mobile {
+        justify-content: flex-start;
+        padding-left: calc(15% - 82px);
+    }
+
+    .thumbails-container {
+        width: 100%;
+        max-width: 1599px;
+        margin-right: 0;
+        justify-content: center;        
+        row-gap: 15px;
+        column-gap: 30px;
+    }
+
+    .card {
+        width: 29.4%;
+        height: auto;
+        aspect-ratio: 1 / 1.21;
+    }
+
+    .card-img {
+        width: 100%;        
+        height: auto;
+        aspect-ratio: 1 / 1;
+    }
+
+    .gorilla {
+        order: -1;
+    }
+
+    .giant-pandas, .eagles, .gorillas, .two-toed-sloth, .cheetahs, .penguins {        
+        background-size: 100%;
+    }
+
+    .giant-pandas:after, .eagles:after, .gorillas:after, .two-toed-sloth:after, .cheetahs:after, .penguins:after {
+        width: 100%;
+    }
+
+    .choose-btn {
+        margin-top: 80px;
     }
 }
