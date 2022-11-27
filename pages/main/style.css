@@ -2108,4 +2108,35 @@ a:visited p {
         
         margin-left: 0;
     }
+
+    .testimonials-wrapper {
+        width: 100%;
+        max-width: 1599px;        
+    }
+
+    .testimonials-container {
+        width: 100%;
+        margin: 100px auto 0;   
+        padding: 0 30px;     
+    }
+
+    .testimonials-border:last-child {
+        display: none;
+    }
+
+    .testimonials-border {
+        width: 293px;        
+    }
+
+    .testimonial-box-wrapper {        
+        width: 289px;        
+    }
+
+    .progress-bar {
+        margin: 21px auto 50px;   
+    }
+
+    .feedback-btn {
+        margin-bottom: 140px;        
+    }
 }
