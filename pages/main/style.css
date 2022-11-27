@@ -98,7 +98,7 @@ a.landing {
     color: white;
 }
 
-.bamboo-header {
+.bamboo-header, .bamboo {
     position: absolute;
     width: 12px;
     height: 21px;
@@ -1597,12 +1597,12 @@ a:visited p {
     .cameras-wrapper {            
         width: 100%;
         background-image: url(../../assets/images/palm-foto.png), url(../../assets/images/streliztzia.png);
-        background-position: bottom -29px left -80px, right bottom;
+        background-position: bottom -81px left -251px, right bottom;
         background-repeat: no-repeat, no-repeat;
-        background-size: 138px 101px, 85px 71px;
+        background-size: 385px 283px, 175px 131px;
         padding-right: 10px;
         padding-left: 10px;
-        padding-bottom: 60px;   
+        padding-bottom: 100px;   
     }
 
     .the-backstage {
@@ -1919,6 +1919,8 @@ a:visited p {
     .burger-btn {
         display: none;
     }
+
+    
 }
 
 @media only screen and (min-width: 1600px) {
