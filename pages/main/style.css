@@ -2083,4 +2083,29 @@ a:visited p {
     .choose-btn {
         margin-top: 80px;
     }
+
+    .feed-wrapper {
+        padding: 30px 30px 50px;
+        width: 100%;
+        max-width: 1599px;       
+    }
+
+    .feed-container {
+        width: 100%;
+        padding: 0 48px 50px;
+        margin: 0 auto;        
+    }
+
+    .pick-and-feed {        
+        margin: 30px 0 20px 0;        
+    }
+
+    .we-know {        
+        margin-bottom: 20px;
+    }
+
+    .we-know, .covid, .even, .how-it-works {
+        
+        margin-left: 0;
+    }
 }
