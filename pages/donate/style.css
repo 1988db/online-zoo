@@ -1210,6 +1210,61 @@ a:visited p {
 
 @media only screen and (min-width: 640px) and (max-width: 999px) {
 
+    header {
+        padding: 2px 20px 3px;
+        justify-content: space-between;
+    }
+
+    .w1600p {   
+        width: 100%;
+        max-width: 999px;
+    }
+
+    .w1160p {
+        width: 100%;
+    }
+
+    #petstory-logo.petstory-logo {
+        width: 46.86px;
+        height: 29px;
+        padding: 0;
+        border: none;
+        margin-top: 2px;     
+    }
+    
+    #pet-story.pet-story {        
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .bamboo-header {
+        position: absolute;
+        width: 7.6px;
+        height: 13.3px;
+        top: 12px;
+        left: 4px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .burger-btn {
+        display: flex;
+    }
+
+    .panda.w1600p {
+        height: 371px;
+        background-image: url(../../assets/images/panda-donate-bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom 0 left -315px;
+    }
+
+    .donate.w1600p {
+        padding: 30px 10px 20px;
+    }
+
 }
 
 @media only screen and (min-width: 1000px) and (max-width: 1599px) {
