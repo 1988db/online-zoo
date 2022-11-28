@@ -1067,12 +1067,25 @@ a:visited p {
         margin-bottom: 25px;
     }
 
+    .donation-sum {
+        padding-left: 7.5px;
+        padding-right: 7.5px;
+    }
+
     .donation-sum span {       
         font-size: 13px;        
     }
 
     .donation-sum span:first-of-type, .donation-sum span:nth-of-type(2), .donation-sum span:nth-of-type(3) {
         display: none;
+    }
+
+    .donation-sum span:nth-last-child(3) {
+        color: var(--black-blue);
+    }
+
+    .donation-sum span:nth-last-child(4) {
+        color: var(--orange-hover);
     }
 
     .donation-range {
@@ -1108,6 +1121,19 @@ a:visited p {
 
     .donation-form p {
         font-size: 15px;
+    }
+
+    .another-amount {
+        width: 180px;
+        height: 42px;       
+    }
+
+    .frequence-wrapper {
+        column-gap: 60px;
+    }
+
+    .amount-input-wrapper:after {        
+        top: 10px;        
     }
 
     footer {
@@ -1262,8 +1288,101 @@ a:visited p {
     }
 
     .donate.w1600p {
-        padding: 30px 10px 20px;
+        padding: 30px 20px 46px;
     }
+
+    h3.need-help {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    p.need-help {        
+        margin-bottom: 30px;
+    }
+
+    .donation.need-help {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+
+    div.pick-and-feed {
+        margin: 0 auto;
+        padding: 30px 0 30px;        
+    }
+
+    h2.pick-and-feed {
+        margin: 0 auto 20px;
+    }
+
+    p.we-know {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .diet-quantity {
+        margin-top: 35px;
+    }
+
+    .amount {
+        margin-left: 10px;
+    }
+
+    .donation-range {        
+        margin-top: 0;        
+    }
+
+    .donation-sum {
+        padding-left: 17px;
+    }
+
+    .donation-sum span:nth-last-child(3) {
+        color: var(--black-blue);
+    }
+
+    .donation-sum span:nth-last-child(4) {
+        color: var(--orange-hover);
+    }
+
+    .donation-sum span:first-of-type, .donation-sum span:nth-of-type(2), .donation-sum span:nth-of-type(3) {
+        display: none;
+    }
+
+    .d1, .d3, .d5 {
+        display: none;
+    }
+
+    .d2 {
+        left: calc(100%*(1/4) - 20px)
+    }
+
+    .d4 {
+        left: calc(100%*(2/4) - 20px)
+    }
+
+    .d6 {
+        left: calc(100%*(3/4) - 20px)
+    }
+
+    .another-amount {
+        width: 180px;
+        height: 42px;
+        margin: 0 auto;
+    }
+
+    .amount-input-wrapper {
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+
+    .amount-input-wrapper:after {
+        top: 10px;
+    }
+
+    .frequence-wrapper {
+        column-gap: 60px;
+    }
+
 
 }
 
