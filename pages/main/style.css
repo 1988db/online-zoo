@@ -2156,4 +2156,8 @@ a:visited p {
     .footer-menu {
        column-gap: 48px;
     }
+
+    .row-1 form {
+        margin-right: 33px;
+    }
 }

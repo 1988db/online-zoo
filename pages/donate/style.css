@@ -1482,4 +1482,133 @@ a:visited p {
 
 @media only screen and (min-width: 1000px) and (max-width: 1599px) {
 
+    header {        
+        padding: 14px 30px;        
+    }
+
+    .panda.w1600p {
+        height: 470px;
+        background-image: url(../../assets/images/panda-donate-bg.png);
+        background-size: auto 390px;
+        background-position: bottom left -160px;    
+    }
+
+    .w1600p {
+        width: 100%;
+        max-width: 1599px;
+    }
+
+    .donate.w1600p {
+        padding: 40px 30px 30px;
+    }
+
+    .w1160p {
+        width: 100%;
+        max-width: 1599px;
+    }
+
+    h3.need-help {
+        margin-bottom: 30px;       
+    }
+
+    h3.need-help.need-help {
+        margin-bottom: 40px;       
+    }
+
+    div.pick-and-feed {
+        margin: 0 auto;
+        padding: 20px 47px 45px;        
+    }
+
+    h2.pick-and-feed {        
+        margin-bottom: 10px;        
+    }
+
+    p.we-know {        
+        margin-bottom: 60px;
+    }
+
+    .diet {        
+        margin-bottom: 48px;
+    }
+
+    .donation-sum {
+        padding-left: 17px;
+    }
+
+    .donation-sum span:first-of-type {
+        display: none;
+    }
+
+    .donation-sum span:nth-of-type(6) {
+        color: var(--black-blue);
+    }
+
+    .donation-sum span:nth-of-type(3) {
+        color: var(--orange-btn);
+    }
+
+    .d1 {
+        display: none;
+    }
+
+    .d2 {
+        left: calc(100%*(1/6) - 20px);
+    }
+
+    .d3 {
+        left: calc(100%*(2/6) - 20px);
+    }
+
+    .d4 {
+        left: calc(100%*(3/6) - 20px);
+    }
+
+    .d5 {
+        left: calc(100%*(4/6) - 20px);
+    }
+
+    .d6 {
+        left: calc(100%*(5/6) - 20px);
+    }
+
+    .donation-range {
+        padding-left: 17px;
+        padding-right: 17px;
+    }
+    .amount {
+        padding-left: 17px;
+    }
+
+    .amount-input-wrapper {
+        position: relative;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+
+    footer {        
+        padding: 40px 30px 50px;
+    }
+
+    .feedback-btn {
+        margin-bottom: 140px;        
+    }
+
+    .footer-wrapper {
+        width: 100%;
+        max-width: 1599px;
+    }
+
+    .footer-container {
+        width: 100%;
+    }
+
+    .footer-menu {
+       column-gap: 48px;
+    }
+    
+    .row-1 form {
+        margin-right: 33px;
+    }
+
 }
