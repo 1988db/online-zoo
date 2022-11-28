@@ -1383,7 +1383,101 @@ a:visited p {
         column-gap: 60px;
     }
 
+    footer {
+        padding: 12px 20px;
+        height: 282px;
+        width: 100%;
+        position: relative;
+    }
 
+    .footer-wrapper {
+        width: 100%;
+    }
+
+    .footer-container {
+        width: 100%;
+    }
+    
+    .ico {
+        margin: 0;
+    }    
+
+    .bamboo {
+        position: absolute;
+        width: 12px;
+        height: 21px;
+        top: 21px;
+        left: 11px;
+    }
+
+    form {
+        display: none;
+    }
+
+    .row-2-mobile {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        width: auto;
+        position: absolute;
+        right: 20px;
+        top: 12px;
+    }
+
+    .row-2 {
+        margin-top: 32px;
+    }
+
+    .row-3-mobile {
+        position: absolute;
+        bottom: 12px;
+        right: 20px;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .row-4-mobile {
+        display: block;
+        position: absolute;
+        left: 20px;
+        bottom: 12px;
+    }
+
+    .row-3, .row-4, .row-5, .row-6 {
+        display: none;
+    }
+
+    .designed-by-mobile {
+        font-family: 'Roboto-Light', sans-serif;
+        font-weight: 100;
+        font-size: 16px;
+        line-height: 120%;
+        color: var(--gray-smoky);
+    }
+
+    .designed-by-mobile {
+        margin-top: 13px;
+    }
+
+    .footer-menu {
+        width: 100%;
+        padding: 0;
+        column-gap: 36px;
+    }
+
+    .footer-menu .about-link {
+        color: var(--orange-btn);
+    }
+
+    .row-4-mobile nav {
+        display: flex;
+    }
+
+    .footer-menu li a {
+        color: white;
+    }
 }
 
 @media only screen and (min-width: 1000px) and (max-width: 1599px) {
