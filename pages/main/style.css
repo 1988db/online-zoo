@@ -144,6 +144,10 @@ a.landing {
     background-color: white;
 }
 
+.close-cross-container {
+    display: none;
+}
+
 .orange-circle {
     width: 465px;
     height: 465px;
@@ -1141,6 +1145,100 @@ a:visited p {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 639px) {
+
+    /* mobile menu */
+
+    .navigation {
+        display: none;
+    }    
+
+    header.visible .nav-container .navigation {
+        display: block;
+    }
+
+    header.visible {
+        position: absolute;
+        display: block;
+        z-index: 3;
+        top: 0px;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0,0,0,0.8);
+        padding: 0;
+    }
+
+    header.visible .landing {
+        display: block;
+        width: 100%;
+        background-color: white;            
+    }
+
+    header.visible a.landing {
+        color: var(--orange-btn);
+        padding: 10px 10px 30px;
+    }
+
+    header.visible .landing #petstory-logo.petstory-logo {
+        border: 1px solid var(--orange-btn);
+        margin-top: 0;
+    }
+
+    header.visible .nav-container {
+        padding: 0;
+        z-index: 4;
+    }
+
+    header.visible .nav-container .navigation .main-menu {
+        background-color: white;
+        padding-bottom: 0;
+    }
+
+    header.visible .nav-container .navigation .main-menu li {
+        display: block;        
+    }
+
+    header.visible .nav-container .navigation .main-menu li a {
+        color: var(--black-blue);
+    }
+
+    header.visible .close-cross-container {
+        display: block;
+        width: 14px;
+        height: 14px;
+        background-color: white;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 3;
+    }
+
+    .close-cross {
+        width: 14px;
+        height: 14px;;
+    }    
+
+    header.visible .nav-container .navigation .main-menu li {        
+        padding: 0 0 15px 10px
+    }
+    
+    header.visible .burger-btn {
+        display: none;
+    }
+
+    header.visible .designed-by {
+        display: block;
+        background-color: white;
+        padding: 0 0 40px 10px;
+        color: var(--black-blue);
+    }
+
+    header.visible .designed-by a{        
+        color: var(--black-blue);
+    }
+
+
+    /* mobile menu */
     
     .giant-panda {
         width: 100%;
@@ -1158,7 +1256,7 @@ a:visited p {
         height: 29px;
         padding: 0;
         border: none;
-        margin-top: 2px;     
+        margin-top: 2px;   
     }
     
     #pet-story.pet-story {        
@@ -1172,18 +1270,14 @@ a:visited p {
         height: 13.3px;
         top: 12px;
         left: 4px;
-    }
-    
-    .main-menu {
-        display: none;
-    }
+    }       
 
     .designed-by {
         display: none;
     }
 
-    .burger-btn {
-        display: flex;
+    .burger-btn {        
+        display: flex;        
     }
 
     .orange-circle {
@@ -1534,6 +1628,102 @@ a:visited p {
 }
 
 @media only screen and (min-width: 640px) and (max-width: 999px) {
+
+    /* mobile menu */
+
+    .navigation {
+        display: none;
+    }    
+
+    header.visible .nav-container .navigation {
+        display: block;
+    }
+
+    header.visible {
+        position: absolute;
+        display: block;
+        z-index: 3;
+        top: 0px;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0,0,0,0.8);
+        padding: 0;
+    }
+
+    header.visible .landing {
+        display: block;
+        width: 100%;
+        background-color: white;            
+    }
+
+    header.visible a.landing {
+        color: var(--orange-btn);
+        padding: 10px 10px 30px;
+    }
+
+    header.visible .landing #petstory-logo.petstory-logo {
+        border: 1px solid var(--orange-btn);
+        margin-top: 0;
+    }
+
+    header.visible .nav-container {
+        padding: 0;
+        z-index: 4;
+    }
+
+    header.visible .nav-container .navigation .main-menu {
+        background-color: white;
+        padding-bottom: 0;
+        display: block;
+    }
+
+    header.visible .nav-container .navigation .main-menu li {
+        display: block;        
+    }
+
+    header.visible .nav-container .navigation .main-menu li a {
+        color: var(--black-blue);
+    }
+
+    header.visible .close-cross-container {
+        display: block;
+        width: 14px;
+        height: 14px;
+        background-color: white;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 3;
+    }
+
+    .close-cross {
+        width: 14px;
+        height: 14px;;
+    }    
+
+    header.visible .nav-container .navigation .main-menu li {        
+        padding: 0 0 15px 10px
+    }
+    
+    header.visible .burger-btn {
+        display: none;
+    }
+
+    header.visible .designed-by {
+        display: block;
+        background-color: white;
+        padding: 0 0 40px 10px;
+        color: var(--black-blue);
+    }
+
+    header.visible .designed-by a{        
+        color: var(--black-blue);
+    }
+
+
+    /* mobile menu */
+
     .giant-panda {
         width: 100%;
         height: 375px;
