@@ -30,8 +30,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
         e.stopPropagation();
     });
 
-    leftBtn.addEventListener('click', thumbailsCarouselLft);
-    rightBtn.addEventListener('click', thumbailsCarouselRgt);
+    
 
     function getViewportWidth () {
         vieportWidth = window.innerWidth;
