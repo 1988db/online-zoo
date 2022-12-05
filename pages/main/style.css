@@ -2175,6 +2175,8 @@ a:visited p {
     .testimonials-wrapper {
         width: 100%;
         max-width: 1599px;        
+        background-size: 203px 330px;
+        background-position: bottom -85px right -10px;
     }
 
     .testimonials-container {
@@ -2196,12 +2198,13 @@ a:visited p {
     }
     
     .testimonials-border {
-        width: 297px;        
+        width: 295px;        
     }
 
     .testimonial-box-wrapper {        
-        width: 294px;
-        padding: 10px 18px 16px 19px;        
+        width: 292px;        
+        padding-right: 18px; 
+        padding-top: 10px;             
     }
 
     .progress-bar {
