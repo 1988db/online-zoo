@@ -80,7 +80,7 @@ header {
 .petstory-logo {
     width: 82px;
     height: 52px;
-    padding: 1px 4.75px 6px;
+    padding: 2.5px 4.75px 2.55px;
     border: 1px solid white;
     border-radius: 2px;
     position: relative;
@@ -155,7 +155,7 @@ a.landing {
     background-color: var(--orange);
     background: var(--orange-gradient);
     position: absolute;
-    top: 92px;
+    top: 12px;
     left: calc(50% - 465px/2 + 239.5px);
 }
 
@@ -176,7 +176,7 @@ a.landing {
     line-height: 75%;
     position: absolute;
     left: calc(50% - 500px/2 + 330.15px);
-    top: 166px;
+    top: 86px;
 }
 
 .favorite {
@@ -192,7 +192,7 @@ a.landing {
     width: 298px;
     height: 54px;
     left: calc(50% - 298px/2 + 332px);
-    top: 626px;
+    top: 546px;
     background: var(--orange);
     background: var(--orange-gradient);
     cursor: pointer;
@@ -223,27 +223,31 @@ a.landing {
     margin: 0 auto;    
     width: 1600px;
     background-image: url(../../assets/images/palm-foto.png), url(../../assets/images/streliztzia.png);
-    background-position: bottom -188px left -588px, right bottom;
+    background-position: bottom -150px left -500px, right bottom;
     background-repeat: no-repeat, no-repeat;
-    background-size: 880px 648px, 368px 275px;
+    background-size: 815px 600px, 368px 275px;
     padding-bottom: 100px;   
 }
 
 .the-backstage {
     width: 1600px;
     margin: 0 auto;
-    padding-top: 160px;
-    padding-bottom: 54px;
+    padding-top: 160px;    
     background-image: url(../../assets/images/flower_photo1.png);
     background-size: 293px 605px;
     background-position: top 12px left 1400px;
     background-repeat: no-repeat;
 }
 
+.backstageWrapper {
+    margin: 0 auto;
+    width: 1246px;
+}
+
 .the-backstage-wrapper {
     width: 1161px;
     display: flex;
-    margin: 0 auto;
+    margin-right: 42.5px;   
 }
 
 .backstage-txt-wrapper {
@@ -251,7 +255,7 @@ a.landing {
     flex-direction: column;
     justify-content: space-between;
     padding-left: 87px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;    
 }
 
 .backstage-txt-wrapper h2 {
@@ -277,13 +281,23 @@ a.landing {
     color: var(--black-blue);
 }
 
+.chinsese1600p {
+    width: 609px;
+    height: 403px;
+    line-height: 0;
+}
+
+img.chinsese {
+    display: none;
+}
+
 .backstage-txt-wrapper p:nth-child(4) {
     line-height: 140%;
 }
 
 .thumbails {
     width: 1600px;
-    margin: 160px auto 0;    
+    margin: 156px auto 0;    
 }
 
 .thumbails-wrapper {
@@ -619,7 +633,7 @@ a.landing {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 60px auto 59px;
+    margin: 80px auto 59px;
     margin-bottom: 0;
     width: 298px;
     height: 54px;
@@ -694,6 +708,16 @@ a.landing {
     font-size: 16px;
     line-height: 130%;
     font-weight: 500;
+}
+
+p.even {
+    width: 863px;
+}
+
+.covid {
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.1px;
 }
 
 .covid {
@@ -776,7 +800,7 @@ a.emergency:active {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 80px auto 0;
+    margin: 70px auto 0;
     width: 298px;
     height: 54px;
     border-radius: 25px;
@@ -838,6 +862,9 @@ h2.testimonials-h2 {
     background: var(--pink-gradient);
     position: relative;  
 }
+.testimonials-border:nth-last-of-type(2) {
+    display: none;
+}
 
 .testimonial-box-wrapper {
     position: absolute;
@@ -849,7 +876,7 @@ h2.testimonials-h2 {
     background: var(--light-gray);
     display: flex;
     flex-direction: column;
-    padding: 15px;  
+    padding: 15px 14px 19px 16px;  
 }
 
 .user-wrap {
@@ -857,7 +884,8 @@ h2.testimonials-h2 {
     font-family: 'Roboto';    
     font-weight: 400;
     font-size: 16px;
-    line-height: 120%;    
+    line-height: 130%;
+    letter-spacing: 0.2px;   
 }
 
 div.name {
@@ -871,12 +899,13 @@ div.name {
 }
 
 .desc-wrap {
-    margin-top: 10px;
+    padding-top: 10px;
     font-family: 'Roboto';
     font-weight: 300;
     font-size: 15px;
-    line-height: 120%;
+    line-height: 120%;    
     color: var(--gray);
+    overflow: hidden;
 }
 
 .progress-bar {
@@ -928,7 +957,7 @@ div.name {
     width: 298px;
     height: 54px;
     background: var(--orange-gradient);    
-    margin-bottom: 180px;
+    margin-bottom: 171px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1111,7 +1140,7 @@ button.email:active {
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 16px;
-    line-height: 140%;
+    
 }
 
 .dsigned-by, .rs-school {
@@ -1119,8 +1148,10 @@ button.email:active {
     font-weight: 100;
     font-size: 16px;   
     color: var(--gray);
-    cursor: pointer;
+    cursor: pointer;    
+    align-self: flex-end;
 }
+
 
 .dsigned-by:hover, .rs-school:hover {
     color: var(--orange-hover);
@@ -1140,6 +1171,7 @@ button.email:active {
     justify-content: space-between;
     align-items: center;
     row-gap: 58px;
+    margin-left: 130px;
 }
 
 a.about p.about {
@@ -1337,6 +1369,10 @@ a:visited p {
         padding-bottom: 60px;   
     }
 
+    .backstageWrapper {
+        width: 100%;
+    }
+
     .the-backstage {
         width: 100%;
         padding-top: 0;
@@ -1382,9 +1418,20 @@ a:visited p {
     }
 
     .card {
-        width: 100%;
-        height: auto;
-        max-width: 601px;
+        width: 285px;
+        height: 332px;        
+    }
+
+    .card-title {
+        font-size: 12.47px;
+    }
+
+    .card-des {
+        padding: 6.24px 10.13px 10.13px 12.47px;
+    }
+
+    .card-description {
+        font-size: 12.47px;
     }
 
     .giant-pandas, .eagles, .gorillas, .two-toed-sloth, .cheetahs, .penguins, .alligators {
@@ -1393,8 +1440,8 @@ a:visited p {
     }
 
     .card-img {
-        width: 100%;        
-        max-width: 602px;          
+        width: 285.24px;
+        height: 285.42px;          
     }
 
     .penguin, .cheetah, .sloth {
@@ -1403,6 +1450,20 @@ a:visited p {
     
     .alligator {
         display: block;
+    }
+
+    .food-meat {
+        width: 37.41px;
+        height: 29.62px;
+    }
+
+    .food-fruit {
+        width: 25.72px;
+        height: 22.71px;
+    }
+
+    .choose-btn {
+        margin-top: 20px;
     }
 
     .feed-wrapper {       
@@ -1425,7 +1486,7 @@ a:visited p {
         margin: 0 3px 20px;
         text-align: center;
         font-size: 18px;
-    }
+    }    
 
     .covid, .even {
         display: none;
@@ -1460,6 +1521,14 @@ a:visited p {
         aspect-ratio: 1 / 1;
         width: 100%;
         height: auto;       
+    }
+
+    .payment-method-container:first-of-type {
+        height: 222px;
+    }
+
+    .payment-method-container {
+        height: 231px;
     }
 
      .payment-method-container .payment-img-wrapper::after {
@@ -1543,11 +1612,7 @@ a:visited p {
         width: calc(100% - 4px);
         height: calc(100% - 4px);       
         overflow: hidden;
-    }
-
-    .desc-wrap {
-        line-height: 130%;
-    }
+    }    
 
     .testimonials-border:last-child {
         display: none;
@@ -1587,10 +1652,12 @@ a:visited p {
     .row-3-mobile {
         margin-top: 30px;
         align-self: flex-end;
+        display: flex;
     }
 
     .row-4-mobile {
         margin-top: 30px;
+        display: flex;
     }
 
     .ico {
@@ -1642,6 +1709,18 @@ a:visited p {
 
     .footer-menu .about-link {
         color: var(--orange-btn);
+    }
+
+    .row-4-mobile .navigation .footer-menu{
+        margin-left: 0;
+    }
+
+    .footer-menu li:first-of-type {
+        margin-left: 0;
+    }
+
+    .footer-menu li {
+        margin-left: 30px;
     }
 }
 
@@ -1750,7 +1829,7 @@ a:visited p {
     }
 
     header {
-        padding: 2px 20px 3px;
+        padding: 1px 20px 2px;
     }
 
     #petstory-logo.petstory-logo {
@@ -1790,7 +1869,7 @@ a:visited p {
         width: 238px;
         height: 238px;
         top: 10px;
-        left: calc(70% - 119px);
+        left: 331px;
     }
 
     .watch-your-fav-animal {
@@ -1802,8 +1881,8 @@ a:visited p {
         height: 205px;
         text-align: center;       
         font-size: 54px;        
-        left: 58%;
-        top: 40px;
+        left: 368px;
+        top: 48px;
     }
     .watch-online-btn {        
         position: relative;
@@ -1844,8 +1923,12 @@ a:visited p {
         display: none;
     }
 
+    .backstageWrapper {
+        width: 100%;
+    }
+
     .backstage-txt-wrapper {
-        width: 77.3%;
+        width: 495px;
         padding-left: 0;
     }
 
@@ -1864,6 +1947,11 @@ a:visited p {
     .thumbails {        
         margin: 0 auto;
         width: 100%;   
+    }
+
+
+    .thumbails-container {
+        row-gap: 11px;
     }
 
     .arrow-left-container-mobile, .arrow-right-container-mobile {
@@ -1887,10 +1975,13 @@ a:visited p {
         margin-right: 0;        
     }
 
+    .arrow-lft-btn, .arrow-rgt-btn {
+        margin-bottom: 8px;
+    }
+
     .card {
-        width: 47%;
-        height: auto;
-        max-width: 601px;
+        width: 285px;
+        height: 332px;        
     }
 
     .giant-pandas, .eagles, .gorillas, .two-toed-sloth, .cheetahs, .penguins, .alligators {
@@ -1899,8 +1990,38 @@ a:visited p {
     }
 
     .card-img {
-        width: 100%;        
-        max-width: 602px;          
+        width: 285px;
+        height: 285px;        
+    }
+
+    .card-title {        
+        font-size: 12.47px;        
+    }
+
+    .card-description {        
+        font-size: 11.7px;             
+    }
+
+    p.card-description {
+        padding: 0;
+    }
+
+    .card-des {
+        padding: 6.24px 10.91px 10.94px 12.47px;
+    }
+
+    .choose-btn {
+        margin-top: 60px;
+    }
+
+    .food-meat {
+        width: 37.41px;
+        height: 29.62px;
+    }
+
+    .food-fruit {
+        width: 25.72px;
+        height: 22.71px;
     }
 
     .penguin, .cheetah, .sloth {
@@ -1937,10 +2058,15 @@ a:visited p {
         margin: 0 0 10px;
         font-size: 16px;
         font-weight: 400;
-    }
+    }   
 
     .even {        
        font-family: 'Roboto', sans-serif;        
+    }
+
+    p.even {
+        width: 600px;
+        margin-bottom: 0;
     }
 
     .how-it-works {
@@ -2030,7 +2156,7 @@ a:visited p {
 
     h2.testimonials-h2 {        
         font-size: 36px;        
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 
     .testimoinals-boxes-container {
@@ -2040,21 +2166,15 @@ a:visited p {
         justify-content: center;
     }
     .testimonials-border {
-        aspect-ratio: 5.45 / 1;
-        width: 100%;
-        height: 100%;        
+        width: 600px;
+        height: 109px;      
     }
 
-    .testimonial-box-wrapper {
-        aspect-ratio: 5.45 / 1;       
+    .testimonial-box-wrapper {              
         width: calc(100% - 4px);
         height: calc(100% - 4px);       
         overflow: hidden;
-    }
-
-    .desc-wrap {
-        line-height: 130%;
-    }
+    }    
 
     .testimonials-border:last-child {
         display: none;
@@ -2146,6 +2266,7 @@ a:visited p {
         width: 100%;
         padding: 0;
         column-gap: 36px;
+        margin-left: 0;
     }
 
     .footer-menu .about-link {
@@ -2163,7 +2284,11 @@ a:visited p {
 
     .main-menu li {
         padding-left: 48px;
-    }   
+    } 
+
+    .nav-container {        
+        padding-left: 15px;
+    }
     
     .giant-panda {
         margin: 0 auto;
@@ -2182,7 +2307,7 @@ a:visited p {
         position: relative;
         width: 367px;
         height: 367px;  
-        left: 45%;
+        left: 456px;
         top: -11px;        
     }
 
@@ -2190,36 +2315,57 @@ a:visited p {
         width: 400px;
         height: 320px;        
         font-size: 85px;        
-        left: 51%;
+        left: 514px;
         top: 42px;
     }
 
     .watch-online-btn {        
-        left: 56%;
+        left: 565px;
         top: 403px;        
     }
 
     .cameras-wrapper {        
         width: 100%;
         max-width: 1599px;        
-        padding-bottom: 156px;
-        background-size: 376px 328px, 241px 180px;
-        background-position: bottom -100px left -190px, right bottom;
+        padding-bottom: 140px;
+        background-size: 340px 296.68px, 241px 180px;
+        background-position: bottom -85px left -160px, right bottom;
     }
 
     .the-backstage {
-        width: 100%;        
-        padding: 100px 30px 142px;        
+        width: 940px;        
+        padding: 100px 30px 142px;
+        margin: 0;       
+    }
+
+    .backstageWrapper {
+        margin: 0 auto;
+        width: 940px;
     }
 
     .the-backstage-wrapper {
-        width: 100%;        
+        width: 100%;
+        margin-right: 0;       
     }
 
-    .chinsese {
-        aspect-ratio: 1.1 / 1;
-        width: 455px;         
-            }
+    div.chinsese {        
+        width: 455px;
+        display: block;
+        padding-top: 9px;           
+    }
+
+    img.chinsese {
+        width: 455px;
+        height: 408px;
+    }
+
+    img.chinsese {
+        display: block;
+    }
+
+    img.chinsese1600p {
+        display: none;
+    }
 
     .backstage-txt-wrapper {        
         padding-left: 31px;        
@@ -2314,14 +2460,30 @@ a:visited p {
         margin-bottom: 20px;
     }
 
-    .we-know, .covid, .even, .how-it-works {
-        
+    .we-know, .covid, .even, .how-it-works {        
         margin-left: 0;
+    }
+
+    p.even {
+        width: auto;
+    }
+
+    .covid, .even {
+        margin-right: 30px;
+    }
+
+    .how-it-works {
+        margin-top: 40px;
+    }
+    h2.testimonials-h2 {
+        margin-bottom: 30px;
     }
 
     .testimonials-wrapper {
         width: 100%;
         max-width: 1599px;        
+        background-size: 203px 330px;
+        background-position: bottom -85px right -10px;
     }
 
     .testimonials-container {
@@ -2330,20 +2492,42 @@ a:visited p {
         padding: 0 30px;     
     }
 
-    .testimonials-border:last-child {
+    .testimonials-border:nth-last-of-type(2) {
+        display: flex;
+    }
+
+    .testimonials-border:nth-last-of-type(3) {
         display: none;
     }
 
+    .testimonials-border:last-child {
+        display: none;
+    }
+    
     .testimonials-border {
-        width: 293px;        
+        width: 295px;        
     }
 
     .testimonial-box-wrapper {        
-        width: 289px;        
+        width: 292px;        
+        padding-right: 18px; 
+        padding-top: 10px;             
     }
 
     .progress-bar {
-        margin: 21px auto 50px;   
+        margin: 20px 269px 52px;
+        width: 390px;
+        height: 8px;  
+    }
+
+    .progress-bar-inner {        
+        width: 388px;
+        height: 6px;  
+    }
+
+    .sliding-bar {        
+        width: 75px;
+        height: 6px;  
     }
 
     footer {        
@@ -2365,9 +2549,14 @@ a:visited p {
 
     .footer-menu {
        column-gap: 48px;
+       justify-content: unset;
     }
 
     .row-1 form {
         margin-right: 33px;
+    }
+
+    p.dsigned-by {
+        margin-right: 5px;
     }
 }
