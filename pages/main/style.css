@@ -80,7 +80,7 @@ header {
 .petstory-logo {
     width: 82px;
     height: 52px;
-    padding: 1px 4.75px 6px;
+    padding: 2.5px 4.75px 2.55px;
     border: 1px solid white;
     border-radius: 2px;
     position: relative;
@@ -778,7 +778,7 @@ a.emergency:active {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 60px auto 0;
+    margin: 70px auto 0;
     width: 298px;
     height: 54px;
     border-radius: 25px;
@@ -839,6 +839,9 @@ h2.testimonials-h2 {
     border-radius: 20px;
     background: var(--pink-gradient);
     position: relative;  
+}
+.testimonials-border:nth-last-of-type(2) {
+    display: none;
 }
 
 .testimonial-box-wrapper {
@@ -1975,7 +1978,11 @@ a:visited p {
 
     .main-menu li {
         padding-left: 48px;
-    }   
+    } 
+
+    .nav-container {        
+        padding-left: 15px;
+    }
     
     .giant-panda {
         margin: 0 auto;
@@ -1994,7 +2001,7 @@ a:visited p {
         position: relative;
         width: 367px;
         height: 367px;  
-        left: 45%;
+        left: 456px;
         top: -11px;        
     }
 
@@ -2002,36 +2009,48 @@ a:visited p {
         width: 400px;
         height: 320px;        
         font-size: 85px;        
-        left: 51%;
+        left: 514px;
         top: 42px;
     }
 
     .watch-online-btn {        
-        left: 56%;
+        left: 565px;
         top: 403px;        
     }
 
     .cameras-wrapper {        
         width: 100%;
         max-width: 1599px;        
-        padding-bottom: 156px;
-        background-size: 376px 328px, 241px 180px;
-        background-position: bottom -100px left -190px, right bottom;
+        padding-bottom: 140px;
+        background-size: 340px 296.68px, 241px 180px;
+        background-position: bottom -85px left -160px, right bottom;
     }
 
     .the-backstage {
-        width: 100%;        
-        padding: 100px 30px 142px;        
+        width: 940px;        
+        padding: 100px 30px 142px;
+        margin: 0;       
+    }
+
+    .backstageWrapper {
+        margin: 0 auto;
+        width: 940px;
     }
 
     .the-backstage-wrapper {
-        width: 100%;        
+        width: 100%;
+        margin-right: 0;       
     }
 
-    .chinsese {
-        aspect-ratio: 1.1 / 1;
+    div.chinsese {        
         width: 455px;
-        display: block;        
+        display: block;
+        padding-top: 9px;           
+    }
+
+    img.chinsese {
+        width: 455px;
+        height: 408px;
     }
 
     img.chinsese {
@@ -2138,6 +2157,21 @@ a:visited p {
         margin-left: 0;
     }
 
+    p.even {
+        width: auto;
+    }
+
+    .covid, .even {
+        margin-right: 30px;
+    }
+
+    .how-it-works {
+        margin-top: 40px;
+    }
+    h2.testimonials-h2 {
+        margin-bottom: 30px;
+    }
+
     .testimonials-wrapper {
         width: 100%;
         max-width: 1599px;        
@@ -2149,20 +2183,41 @@ a:visited p {
         padding: 0 30px;     
     }
 
-    .testimonials-border:last-child {
+    .testimonials-border:nth-last-of-type(2) {
+        display: flex;
+    }
+
+    .testimonials-border:nth-last-of-type(3) {
         display: none;
     }
 
+    .testimonials-border:last-child {
+        display: none;
+    }
+    
     .testimonials-border {
-        width: 293px;        
+        width: 297px;        
     }
 
     .testimonial-box-wrapper {        
-        width: 289px;        
+        width: 294px;
+        padding: 10px 18px 16px 19px;        
     }
 
     .progress-bar {
-        margin: 21px auto 50px;   
+        margin: 20px 269px 52px;
+        width: 390px;
+        height: 8px;  
+    }
+
+    .progress-bar-inner {        
+        width: 388px;
+        height: 6px;  
+    }
+
+    .sliding-bar {        
+        width: 75px;
+        height: 6px;  
     }
 
     footer {        
@@ -2184,9 +2239,14 @@ a:visited p {
 
     .footer-menu {
        column-gap: 48px;
+       justify-content: unset;
     }
 
     .row-1 form {
         margin-right: 33px;
+    }
+
+    p.dsigned-by {
+        margin-right: 5px;
     }
 }
