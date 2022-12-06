@@ -302,6 +302,27 @@ p.we-know {
     padding: 12px;
 }
 
+.range-dot.active {
+    border: 2px solid var(--orange-btn);
+    padding: 12px;    
+}
+
+.active:after {
+    display: block;
+    content: '';
+    width: 21px;
+    height: 21px;
+    border: 2px solid var(--orange-btn);
+    border-radius: 50%;
+    position: relative;
+    top: -6.6px;
+    left: -6.6px;
+}
+
+.donation-sum span.activeLabel {
+    color: var(--orange-btn);
+}
+
 .range-dot:hover:after {
     display: block;
     content: '';
@@ -333,10 +354,6 @@ p.we-know {
     width: auto;
 }
 
-.donation-sum span:nth-last-child(3) {
-    color: var(--orange-btn);
-}
-
 .d0 {
     left: -20px;
 }
@@ -346,21 +363,7 @@ p.we-know {
 }
 
 .d2 {
-    left: calc(100%*(2/7) - 20px);
-    border: 2px solid var(--orange-btn);
-    padding: 12px;
-}
-
-.d2:after {
-    display: block;
-    content: '';
-    width: 21px;
-    height: 21px;
-    border: 2px solid var(--orange-btn);
-    border-radius: 50%;
-    position: relative;
-    top: -6.7px;
-    left: -7px;
+    left: calc(100%*(2/7) - 20px);    
 }
 
 .d3 {
@@ -404,6 +407,7 @@ input[type=number] {
 
 .amount-input-wrapper {
     align-self: flex-start;
+    margin: 0 auto;
 }
 
 .another-amount {
@@ -1167,14 +1171,6 @@ a:visited p {
         display: none;
     }
 
-    .donation-sum span:nth-last-child(3) {
-        color: var(--black-blue);
-    }
-
-    .donation-sum span:nth-last-child(4) {
-        color: var(--orange-hover);
-    }
-
     .donation-range {
         height: 30px;       
     }
@@ -1504,15 +1500,7 @@ a:visited p {
 
     .donation-sum {
         padding-left: 17px;
-    }
-
-    .donation-sum span:nth-last-child(3) {
-        color: var(--black-blue);
-    }
-
-    .donation-sum span:nth-last-child(4) {
-        color: var(--orange-hover);
-    }
+    }    
 
     .donation-sum span:first-of-type, .donation-sum span:nth-of-type(2), .donation-sum span:nth-of-type(3) {
         display: none;
@@ -1708,15 +1696,7 @@ a:visited p {
 
     .donation-sum span:first-of-type {
         display: none;
-    }
-
-    .donation-sum span:nth-of-type(6) {
-        color: var(--black-blue);
-    }
-
-    .donation-sum span:nth-of-type(3) {
-        color: var(--orange-btn);
-    }
+    }      
 
     .d1 {
         display: none;

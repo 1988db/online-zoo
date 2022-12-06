@@ -6,9 +6,8 @@ document.addEventListener('DOMContentLoaded', ()=> {
     const designedBy = document.getElementById('designed-by');    
     const leftBtn = document.getElementById('arrow-lft-btn');
     const rightBtn = document.getElementById('arrow-rgt-btn');
-    const viewportSize = document.getElementById('viewport');
-  
-    getViewportWidth();
+    const viewportSize = document.getElementById('viewport'); 
+    
 
     window.addEventListener('resize', getViewportWidth);
 
@@ -28,15 +27,6 @@ document.addEventListener('DOMContentLoaded', ()=> {
     });
     designedBy.addEventListener('click', (e)=> {
         e.stopPropagation();
-    });
-
-    leftBtn.addEventListener('click', thumbailsCarouselLft);
-    rightBtn.addEventListener('click', thumbailsCarouselRgt);
-
-    function getViewportWidth () {
-        vieportWidth = window.innerWidth;
-        viewportSize.innerText = vieportWidth;
-    }   
-
+    });     
 
 })
