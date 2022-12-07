@@ -156,10 +156,12 @@ document.addEventListener('DOMContentLoaded', ()=> {
     //donation amount validation
 
     donationAmount.addEventListener('change', amountValidate);
-
+    
     function amountValidate () {   
-        let vieportWidth = window.innerWidth;     
-        let input = parseInt(donationAmount.value);        
+        let vieportWidth = window.innerWidth;
+        document.querySelectorAll('.range-dot').forEach(el => el.classList.remove('active'));    
+        let input = parseInt(donationAmount.value);
+        donationAmountLabels.forEach(el => el.classList.remove('activeLabel'));        
         if(isNaN(input)) {
             donationAmount.value = 100;
         }
