@@ -323,6 +323,7 @@ a.landing {
     width: 16px;
     height: 8px;    
 }
+
 .thumbails-container1 {
     width: 1158px;    
     overflow: hidden;
@@ -1381,6 +1382,14 @@ a:visited p {
         margin-right: 0;
     }
 
+    .thumbails-container1 {
+        width: 100%;       
+    }
+    
+    .thumbails-container2 {
+        width: 100%;           
+    }  
+   
     .card {
         width: 100%;
         height: auto;
@@ -1864,6 +1873,15 @@ a:visited p {
     .thumbails {        
         margin: 0 auto;
         width: 100%;   
+    }
+
+    
+    .thumbails-container1 {
+        width: 100%;       
+    }
+    
+    .thumbails-container2 {
+        width: 100%;           
     }
 
     .arrow-left-container-mobile, .arrow-right-container-mobile {

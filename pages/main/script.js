@@ -6,10 +6,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
     const designedBy = document.getElementById('designed-by');    
     const leftBtn = document.getElementById('arrow-lft-btn');
     const rightBtn = document.getElementById('arrow-rgt-btn');
-    const viewportSize = document.getElementById('viewport'); 
-    
-
-    window.addEventListener('resize', getViewportWidth);
+    const viewportSize = document.getElementById('viewport');   
 
     burgerBtn.addEventListener('click', (e)=> {
         header.classList.toggle('visible');
